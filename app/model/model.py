@@ -3,7 +3,7 @@ from sqlalchemy.orm import Mapped,mapped_column
 from sqlalchemy import Integer,String,DateTime,func
 from datetime import datetime
 class Todo(Base):
-    __tablename__="todo"
+    __tablename__="toooddd"
     
     id: Mapped[int] = mapped_column(Integer,primary_key=True)
     title: Mapped[str] = mapped_column(String,nullable=False)
