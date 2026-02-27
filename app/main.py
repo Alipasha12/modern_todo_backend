@@ -24,10 +24,6 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(debug=True, lifespan=lifespan)
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port)
-    
 origins = ["http://localhost:5173", "https://zaif-todos.vercel.app"]
 
 app.add_middleware(
